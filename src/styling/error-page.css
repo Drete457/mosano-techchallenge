@@ -1,0 +1,32 @@
+.text_center {
+    text-align: center;
+}
+
+.page_404 {
+    padding: 1rem 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+}
+
+.page_404 img {
+    width: 100%;
+}
+
+.four_zero_four_bg {
+    background-image: url('/src/assets/images/caveman.gif');
+    height: 25rem;
+    background-position: center;
+}
+
+.four_zero_four_bg h1 {
+    font-size: 4rem;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 4rem;
+}
+
+.contant_box_404 {
+    margin-top: -2rem;
+    text-align: center;
+}
