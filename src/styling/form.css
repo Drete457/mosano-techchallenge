@@ -1,0 +1,42 @@
+.user_input {
+    display: flex;
+    justify-content: center;
+}
+
+.user_input__form {
+    color: var(--standart-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.user_input__form span {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    margin-left: 0.5rem;
+    width: 35vw;
+}
+
+.user_input__form span label {
+    font-size: xx-large;
+}
+
+.user_input__form span input {
+    border: 0.2rem solid var(--standart-color);
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    width: 50%;
+}
+
+.user_input__form span input:focus {
+    border: -0.4rem solid var(--standart-color);
+    outline-color: var(--standart-color);
+}
+
+.user_input__form button {
+    border: 0.2rem solid var(--standart-color);
+    margin-left: auto;
+    margin-top: 5vh;
+    height: 3vh;
+    width: 8vw;
+}

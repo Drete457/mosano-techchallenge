@@ -1,11 +1,33 @@
 {
     "btn": {
-        "home": "Return Main Page"
+        "home": "Return Main Page",
+        "save": "Save"
     },
     "pages": {
         "error": {
             "lost": "Look like you're lost",
             "page": "The Page you are looking is not avaible right now!"
+        },
+        "form": {
+            "name": {
+                "title": "Name",
+                "placeholder": "Name here",
+                "error": "Write the first name"
+            },
+            "surname": {
+                "title": "Surname",
+                "placeholder": "Surname here",
+                "error": "Write the last name"
+            },
+            "countries": {
+                "title": "Countries",
+                "placeholder": "Choose a country",
+                "error": "Need to select a country"
+            },
+            "birthday": {
+                "title": "Birthday",
+                "error": "Need to choose a birthday date"
+            }
         }
     }
 }
