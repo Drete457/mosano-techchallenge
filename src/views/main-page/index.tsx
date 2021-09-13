@@ -1,5 +1,6 @@
 import { useLayoutEffect } from 'react';
 import useGetCountries from 'hooks/useGetCountries';
+import Footer from 'components/footer';
 
 const MainPage: React.FC = () => {
     const { isLoading, error, data, execute } = useGetCountries();
@@ -9,9 +10,10 @@ const MainPage: React.FC = () => {
     }, [execute]);
 
     return (
-        <div>
-            <p>Inicial</p>
-        </div>
+        <>
+            <main />
+            <Footer />
+        </>
     );
 };
 
