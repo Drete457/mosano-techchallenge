@@ -28,6 +28,11 @@
                 "title": "Birthday",
                 "error": "Need to choose a birthday date"
             }
+        },
+        "table": {
+            "name": "Name",
+            "country": "Country",
+            "birthday": "Birthday"
         }
     }
 }
