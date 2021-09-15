@@ -23,9 +23,24 @@ const MainPage: React.FC = () => {
     const updateUserList = useCallback(
         async (newUser: User) => {
             const newMessage = information(newUser, i18n.language, t);
+            const newArray = [newUser, ...usersList];
 
-            setUsersList([newUser, ...usersList]);
+            setUsersList(newArray);
             setMessage(newMessage);
+
+            const sessionData: string | null =
+                sessionStorage.getItem('usersList');
+
+            if (sessionData !== null) {
+                const oldUsersList = JSON.parse(sessionData);
+                const newArrayNewValues = [...newArray, ...oldUsersList];
+
+                sessionStorage.removeItem('usersList');
+                sessionStorage.setItem(
+                    'usersList',
+                    JSON.stringify(newArrayNewValues),
+                );
+            }
         },
         [usersList, t],
     );
