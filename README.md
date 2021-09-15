@@ -12,7 +12,7 @@ With Git, Node.js and yarn installed on your machine, choose location and clone 
 
 ```
 git clone https://github.com/Drete457/mosano-techchallenge.git
-cd mosano-techchallenge.gitm
+cd mosano-techchallenge
 yarn
 yarn start
 ```
