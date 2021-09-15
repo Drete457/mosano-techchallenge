@@ -19,8 +19,8 @@
                 "placeholder": "Nome aqui"
             },
             "surname": {
-                "title": "Ultimo Nome",
-                "placeholder": "Ultimo Nome Aqui"
+                "title": "Último Nome",
+                "placeholder": "Último Nome aqui"
             },
             "countries": {
                 "title": "Paises",
