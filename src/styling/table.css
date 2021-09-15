@@ -2,11 +2,15 @@
     border: 0.2rem solid var(--standart-color);
     font-size: xx-large;
     margin-left: 2rem;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     height: 65vh;
     text-align: left;
     width: 50vw;
+}
+
+.show_table th {
+    width: 50%;
 }
 
 .show_table td {

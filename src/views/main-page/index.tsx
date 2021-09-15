@@ -9,6 +9,7 @@ import Table from 'components/table';
 import User from 'helpers/type/user';
 import userFormat from 'helpers/format/user';
 import information from 'helpers/format/information';
+import ErrorPage from 'views/error-page';
 
 const MainPage: React.FC = () => {
     const [t] = useTranslation();
@@ -46,22 +47,28 @@ const MainPage: React.FC = () => {
 
     return (
         <>
-            <main className="home">
-                <Form message={message} setUser={setUser} />
-                <Table usersList={usersList} setMessage={setMessage} />
-            </main>
-            <Footer />
+            {error ? (
+                <ErrorPage />
+            ) : (
+                <>
+                    <main className="home">
+                        <Form message={message} setUser={setUser} />
+                        <Table usersList={usersList} setMessage={setMessage} />
+                    </main>
+                    <Footer />
 
-            <datalist id="countriesList">
-                {data.map?.(country => (
-                    <option
-                        aria-label={country}
-                        key={country}
-                        value={country}
-                    />
-                ))}
-            </datalist>
-            {isLoading && <Loading />}
+                    <datalist id="countriesList">
+                        {data.map?.(country => (
+                            <option
+                                aria-label={country}
+                                key={country}
+                                value={country}
+                            />
+                        ))}
+                    </datalist>
+                    {isLoading && <Loading />}
+                </>
+            )}
         </>
     );
 };
