@@ -11,6 +11,10 @@ const resources = {
 };
 
 i18n.use(initReactI18next).init({
+    whitelist: ['en', 'pt'],
+    nonExplicitWhitelist: true,
+    load: 'languageOnly',
+
     resources,
     lng: 'en',
     fallbackLng: 'en',

@@ -1,7 +1,8 @@
 .footer {
     color: var(--standart-color);
     font-size: xx-large;
-    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
     text-align: right;
     text-transform: uppercase;
 }

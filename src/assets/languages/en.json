@@ -11,22 +11,18 @@
         "form": {
             "name": {
                 "title": "Name",
-                "placeholder": "Name here",
-                "error": "Write the first name"
+                "placeholder": "Name here"
             },
             "surname": {
                 "title": "Surname",
-                "placeholder": "Surname here",
-                "error": "Write the last name"
+                "placeholder": "Surname here"
             },
             "countries": {
                 "title": "Countries",
-                "placeholder": "Choose a country",
-                "error": "Need to select a country"
+                "placeholder": "Choose a country"
             },
             "birthday": {
-                "title": "Birthday",
-                "error": "Need to choose a birthday date"
+                "title": "Birthday"
             }
         },
         "table": {
@@ -34,5 +30,13 @@
             "country": "Country",
             "birthday": "Birthday"
         }
+    },
+    "information": {
+        "hello": "Hello",
+        "from": "from",
+        "on": ", on",
+        "of": "of",
+        "you": "you will have",
+        "years": "years"
     }
 }

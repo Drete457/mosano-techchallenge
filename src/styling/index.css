@@ -1,6 +1,10 @@
 :root {
     --background-color: #eeeeee;
     --standart-color: #578ec7;
+    --table-divide-line-color: #a000d3;
+    --table-row-hover-color: #bdbdbd;
+    --message-background-color: #deefd7;
+    --message-text-color: #000000;
 }
 
 body {
@@ -11,4 +15,10 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }

@@ -40,3 +40,13 @@
     height: 3vh;
     width: 8vw;
 }
+
+.form_message {
+    background-color: var(--message-background-color);
+    color: var(--message-text-color);
+    font-size: large;
+    margin-top: 10rem;
+    padding: 0.5rem;
+    text-align: justify;
+    width: 30vw;
+}

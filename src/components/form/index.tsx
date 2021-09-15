@@ -6,9 +6,9 @@ import reverseDate from 'helpers/reverse-date';
 import 'styling/form.css';
 
 type SetUser = React.Dispatch<React.SetStateAction<User>>;
-type FormType = { setUser: SetUser };
+type FormType = { message: string; setUser: SetUser };
 
-const Form: React.FC<FormType> = ({ setUser }) => {
+const Form: React.FC<FormType> = ({ message, setUser }) => {
     const [t] = useTranslation();
     const [formData, setFormData] = useState({ ...userFormat });
 
@@ -91,6 +91,8 @@ const Form: React.FC<FormType> = ({ setUser }) => {
                 </span>
 
                 <button type="submit">{t('btn.save')}</button>
+
+                {message && <p className="form_message">{message}</p>}
             </form>
         </section>
     );
