@@ -40,6 +40,9 @@ const MainPage: React.FC = () => {
                     'usersList',
                     JSON.stringify(newArrayNewValues),
                 );
+            } else {
+                sessionStorage.removeItem('usersList');
+                sessionStorage.setItem('usersList', JSON.stringify(newArray));
             }
         },
         [usersList, t],

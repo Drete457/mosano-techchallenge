@@ -1,0 +1,30 @@
+.show_table {
+    border: 0.2rem solid var(--standart-color);
+    font-size: xx-large;
+    margin: 0 auto;
+    margin-top: 4rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 65vh;
+    text-align: left;
+    width: 50vw;
+}
+
+.show_table th {
+    width: 50%;
+}
+
+.show_table td {
+    border-top: 0.05rem solid var(--table-divide-line-color);
+    width: 50%;
+}
+
+.show_table__row__focus:hover {
+    background-color: var(--table-row-hover-color);
+    cursor: pointer;
+}
+
+.show_table th,
+td {
+    padding: 1rem;
+}
