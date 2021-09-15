@@ -10,6 +10,7 @@ import User from 'helpers/type/user';
 import userFormat from 'helpers/format/user';
 import information from 'helpers/format/information';
 import ErrorPage from 'views/error-page';
+import TranslateButtons from 'components/translate-buttons';
 
 const MainPage: React.FC = () => {
     const [t] = useTranslation();
@@ -69,6 +70,9 @@ const MainPage: React.FC = () => {
                 <ErrorPage />
             ) : (
                 <>
+                    <header>
+                        <TranslateButtons />
+                    </header>
                     <main className="home">
                         <Form message={message} setUser={setUser} />
                         <Table usersList={usersList} setMessage={setMessage} />

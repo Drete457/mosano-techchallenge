@@ -22,3 +22,16 @@ body {
     justify-content: center;
     margin-top: 3rem;
 }
+
+.translation_buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2vh;
+    margin-right: 10vw;
+}
+
+.translation_buttons button {
+    border: 0.2rem solid var(--standart-color);
+    margin: 1rem;
+    padding: 1rem;
+}

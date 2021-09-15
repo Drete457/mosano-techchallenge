@@ -8,7 +8,7 @@ const Revisited: React.FC<TableType> = ({ usersList }) => {
     const [t] = useTranslation();
 
     return (
-        <section className="show_table">
+        <section className="revisited_table">
             <table>
                 <thead>
                     <tr>
@@ -22,7 +22,7 @@ const Revisited: React.FC<TableType> = ({ usersList }) => {
                         return (
                             <tr
                                 key={`${user.name} ${user.surname} ${user.country} ${user.birthday}`}
-                                className="show_table__row__focus"
+                                className="revisited_table__row__focus"
                             >
                                 <td>{`${user.name} ${user.surname}`}</td>
                                 <td>{user.country}</td>

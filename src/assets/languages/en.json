@@ -2,7 +2,11 @@
     "btn": {
         "home": "Return Main Page",
         "save": "Save",
-        "login": "Login"
+        "login": "Login",
+        "translate": {
+            "english": "English",
+            "portuguese": "Portuguese"
+        }
     },
     "pages": {
         "error": {

@@ -2,7 +2,11 @@
     "btn": {
         "home": "Voltar a Página Principal",
         "save": "Salvar",
-        "login": "Login"
+        "login": "Logar",
+        "translate": {
+            "english": "Inglês",
+            "portuguese": "Português"
+        }
     },
     "pages": {
         "error": {
@@ -42,7 +46,7 @@
     },
     "information": {
         "hello": "Olá",
-        "from": "do",
+        "from": "de",
         "on": ", no",
         "of": "de",
         "you": "vais ter",
