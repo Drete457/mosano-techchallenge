@@ -1,0 +1,51 @@
+{
+    "btn": {
+        "home": "Voltar a Página Principal",
+        "save": "Salvar",
+        "login": "Login"
+    },
+    "pages": {
+        "error": {
+            "lost": "Parece que estás perdido",
+            "page": "A Página que estás a procura, não está disponivel agora!"
+        },
+        "form": {
+            "name": {
+                "title": "Nome",
+                "placeholder": "Nome aqui"
+            },
+            "surname": {
+                "title": "Ultimo Nome",
+                "placeholder": "Ultimo Nome Aqui"
+            },
+            "countries": {
+                "title": "Paises",
+                "placeholder": "Escolhe um pais"
+            },
+            "birthday": {
+                "title": "Aniversário"
+            },
+            "user": {
+                "title": "Utilizador",
+                "placeholder": "Escreve o Utilizador"
+            },
+            "password": {
+                "title": "Palavra-chave",
+                "placeholder": "Escreve a Palavra-chave"
+            }
+        },
+        "table": {
+            "name": "Nome",
+            "country": "Pais",
+            "birthday": "Aniversário"
+        }
+    },
+    "information": {
+        "hello": "Olá",
+        "from": "do",
+        "on": ", no",
+        "of": "de",
+        "you": "vais ter",
+        "years": "anos"
+    }
+}

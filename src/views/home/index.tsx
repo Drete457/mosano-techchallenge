@@ -1,4 +1,4 @@
-import { Suspense, useState } from 'react';
+import { Suspense, useState, lazy } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import ErrorBoundary from 'components/error-boundary';
 import Loading from 'components/loading';
@@ -9,7 +9,7 @@ import 'i18n';
 import 'styling/index.css';
 
 const Home: React.FC = () => {
-    const [login, setLogin] = useState<boolean>(true);
+    const [login, setLogin] = useState<boolean>(false);
 
     return (
         <>
@@ -19,6 +19,9 @@ const Home: React.FC = () => {
                         <Switch>
                             {routes.map?.(page => {
                                 if (page.name === 'Revisited') {
+                                    const Login = lazy(
+                                        () => import('views/login'),
+                                    );
                                     const sessionData: string | null =
                                         sessionStorage.getItem('usersList');
                                     let array: User[] = [];
@@ -38,7 +41,9 @@ const Home: React.FC = () => {
                                                         usersList={array}
                                                     />
                                                 ) : (
-                                                    <p>no login</p>
+                                                    <Login
+                                                        setLogin={setLogin}
+                                                    />
                                                 );
                                             }}
                                         />
